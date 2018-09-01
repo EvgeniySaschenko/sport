@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="keywords" content="meta_k .........text"/>
+    <meta name="description" content="meta_d ......text"/>
+    <title>Doc title</title>
+  </head>
+  <body>
+    <style>
+      .preloader{
+      	min-height: 100vh;
+      	height: 100%;
+      	width: 100%;
+      	background-color: rgb(255,255,255);
+      	color: rgb(36,111,176);
+      	font-size: 45px;
+      	font-family:  Arial, sans-serif;
+      	align-items: center;
+      	justify-content: center;
+      	flex-direction: column;
+      	position: fixed;
+      	top: 0;
+      	left: 0;
+      	transition-duration: 1s;
+      	display: none;
+      	z-index: 10000;
+      }
+      .preloader.noload{
+      display: flex;
+      }
+      .preloader__text_1{
+      font-size: 45px;
+      }
+      .preloader__text_2{
+      font-size: 20px;
+      }
+      .wrapper.noload{
+      display: none;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+      	document.querySelector('.preloader').classList.remove('noload');
+      });
+      
+    </script>
+    <div class="preloader">
+      <div class="preloader__text_1">Loading</div><img class="img" src="images/preloader.gif" alt="priloader"/>
+    </div>
+    <div class="wrapper">
+      <script>
+        document.querySelector('.preloader').classList.add('noload');
+        
+      </script>
+      <header class="header" style="background-image: url(images/bg-header.jpg)">
+        <div class="container">
+          <div class="header__row header__row_1"><a class="logo logo_header" href="#"><img class="logo__img" src="images/logo.svg" alt="logo" title=""/></a>
+          </div>
+          <div class="header__row header__row_2">
+            <h1 class="text-box text-box_header"><span class="text-box__text text-box__text_1">BE RECRUITED</span><span class="text-box__text text-box__text_2">PLAY COLLEGE SPORTS</span>
+            </h1>
+          </div>
+          <div class="header__row header__row_3"><a class="btn btn_apple-store btn_app" href="#"><i class="btn__icon">
+            <svg class="icon icon_svg icon_apple-store">
+              <use xlink:href="images/sprite/svg-symbols.svg#apple-store"></use>
+            </svg></i><span class="btn__box-text"><span class="btn__text btn__text_1">download on the</span><span class="btn__text btn__text_2">app store</span></span></a><a class="btn btn_google-play btn_app" href="#"><i class="btn__icon">
+            <svg class="icon icon_svg icon_google-play">
+              <use xlink:href="images/sprite/svg-symbols.svg#google-play"></use>
+            </svg></i><span class="btn__box-text"><span class="btn__text btn__text_1">get it on</span><span class="btn__text btn__text_2">google play</span></span></a>
+          </div>
+        </div>
+      </header>
+      <section class="section section_advantages">
+        <div class="advantages">
+          <div class="advantages__item advantages__item_1">
+            <div class="container">
+              <div class="advantages__box-title">
+                <div class="advantages__box-text">
+                  <h3 class="advantages__title">ATHLETS
+                  </h3>
+                </div>
+              </div>
+              <div class="advantages__box-img"><img class="advantages__img" src="images/athlets.png" alt="athlets" title=""/>
+              </div>
+            </div>
+            <ul class="advantages__list">
+              <li class="advantages__list-item advantages__list-item_1">
+                <div class="container">
+                  <div class="advantages__box-text"><span class="advantages__list-item-number">01</span>
+                    <div class="advantages__list-item-name">Connection
+                    </div>
+                    <p class="advantages__list-item-text">Connect with coaches directly, you can ping coaches to view profile.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__list-item advantages__list-item_2">
+                <div class="container">
+                  <div class="advantages__box-text"><span class="advantages__list-item-number">02</span>
+                    <div class="advantages__list-item-name">Collaboration
+                    </div>
+                    <p class="advantages__list-item-text">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__list-item advantages__list-item_3">
+                <div class="container">
+                  <div class="advantages__box-text"><span class="advantages__list-item-number">03</span>
+                    <div class="advantages__list-item-name">Growth
+                    </div>
+                    <p class="advantages__list-item-text">Resources and tools for you to get better as a student Athelte. Access  to training classes, tutor sessions, etc
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__item advantages__item_2">
+            <div class="container">
+              <div class="advantages__box-title">
+                <div class="advantages__box-text">
+                  <h3 class="advantages__title">Players
+                  </h3>
+                </div>
+              </div>
+              <div class="advantages__box-img"><img class="advantages__img" src="images/player.png" alt="player" title=""/>
+              </div>
+            </div>
+            <ul class="advantages__list">
+              <li class="advantages__list-item advantages__list-item_1">
+                <div class="container">
+                  <div class="advantages__box-text"><span class="advantages__list-item-number">01</span>
+                    <div class="advantages__list-item-name">Connection
+                    </div>
+                    <p class="advantages__list-item-text">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__list-item advantages__list-item_2">
+                <div class="container">
+                  <div class="advantages__box-text"><span class="advantages__list-item-number">02</span>
+                    <div class="advantages__list-item-name">Collaboration
+                    </div>
+                    <p class="advantages__list-item-text">Work with recruiter to increase your chances of finding talented athlete.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages__list-item advantages__list-item_3">
+                <div class="container">
+                  <div class="advantages__box-text"><span class="advantages__list-item-number">03</span>
+                    <div class="advantages__list-item-name">Growth
+                    </div>
+                    <p class="advantages__list-item-text">Save your time, recruit proper athlets for your team.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section_presentation">
+        <div class="presentation">
+          <div class="presentation__item">
+            <div class="presentation__col presentation__col_1">
+              <div class="presentation__box-img"><img class="presentation__img" src="images/presentation-1.jpg" alt="presentation" title=""/><img class="presentation__img presentation__img_mob" src="images/presentation-1-640.jpg" alt="presentation" title=""/>
+                <div class="presentation__box-number"> 
+                  <div class="presentation__number"> 01
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__col presentation__col_2">
+              <div class="presentation__box-text">
+                <h3 class="presentation__title">Be active
+                </h3>
+                <p class="presentation__text">Post videos with your skills, Like and follow others <br> to be more popular.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="presentation__item">
+            <div class="presentation__col presentation__col_1">
+              <div class="presentation__box-img"><img class="presentation__img" src="images/presentation-2.jpg" alt="presentation" title=""/><img class="presentation__img presentation__img_mob" src="images/presentation-2-640.jpg" alt="presentation" title=""/>
+                <div class="presentation__box-number"> 
+                  <div class="presentation__number"> 02
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__col presentation__col_2">
+              <div class="presentation__box-text">
+                <h3 class="presentation__title">Find contact
+                </h3>
+                <p class="presentation__text">Contact others to find right coach or athlete you are looking for. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="presentation__item">
+            <div class="presentation__col presentation__col_1">
+              <div class="presentation__box-img"><img class="presentation__img" src="images/presentation-3.jpg" alt="presentation" title=""/><img class="presentation__img presentation__img_mob" src="images/presentation-3-640.jpg" alt="presentation" title=""/>
+                <div class="presentation__box-number"> 
+                  <div class="presentation__number"> 03
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__col presentation__col_2">
+              <div class="presentation__box-text">
+                <h3 class="presentation__title">Work it
+                </h3>
+                <p class="presentation__text">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" style="background-image: url(images/bg-footer.jpg)">
+        <div class="container">
+          <div class="footer__row footer__row_1">
+            <div class="text-box text-box_download text-box_footer">
+              <div class="text-box__col text-box__col_img">
+                <div class="text-box__icon">
+                  <svg class="icon icon_svg icon_logo-small">
+                    <use xlink:href="images/sprite/svg-symbols.svg#logo-small"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="text-box__col text-box__col_text">
+                <div class="text-box__text text-box__text_big">Download app
+                </div>
+                <div class="text-box__text text-box__text_small">Show everyone what you can do!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__row footer__row_2"><a class="btn btn_apple-store btn_app" href="#"><i class="btn__icon">
+            <svg class="icon icon_svg icon_apple-store">
+              <use xlink:href="images/sprite/svg-symbols.svg#apple-store"></use>
+            </svg></i><span class="btn__box-text"><span class="btn__text btn__text_1">download on the</span><span class="btn__text btn__text_2">app store</span></span></a><a class="btn btn_google-play btn_app" href="#"><i class="btn__icon">
+            <svg class="icon icon_svg icon_google-play">
+              <use xlink:href="images/sprite/svg-symbols.svg#google-play"></use>
+            </svg></i><span class="btn__box-text"><span class="btn__text btn__text_1">get it on</span><span class="btn__text btn__text_2">google play</span></span></a>
+          </div>
+          <div class="footer__row footer__row_3"><a class="logo logo_footer" href="#"><img class="logo__img" src="images/logo.svg" alt="logo" title=""/></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

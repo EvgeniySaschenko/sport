@@ -1,0 +1,29 @@
+.header
+	height: 960px
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	@media #{$phone-big}
+		height: 568px
+	&__row
+		width: 100%
+		display: flex
+		justify-content: center
+		&_1
+			padding-top: 45px
+			margin-bottom: 280px
+			@media #{$tablet}
+				margin-bottom: 160px
+			@media #{$phone-big}
+				padding-top: 35px
+				margin-bottom: 125px
+		&_2
+			margin-bottom: 190px
+			@media #{$tablet}
+				margin-bottom: 280px
+			@media #{$phone-big}
+				margin-bottom: 80px
+		&_3
+			@media #{$phone-big}
+				align-items: center
+				flex-direction: column

@@ -1,0 +1,141 @@
+.presentation
+	@media #{$phone}
+		margin-bottom: -10px
+	&__item
+		display: flex
+		flex-wrap: wrap
+		&:nth-child(even)
+			flex-direction: row-reverse
+			.presentation
+				&__box-text
+					margin-left: 188px
+					@media #{$pc-medium}
+						margin-left: 0
+						margin-right: 125px
+						padding-left: 10px
+					@media #{$tablet}
+						margin-left: 30px
+					@media #{$phone-big}
+						margin-right: 0
+					@media #{$phone}
+						margin-left: 20px
+						padding-left: 0
+				&__title
+					margin-bottom: 70px
+					@media #{$pc-medium}
+						margin-bottom: 30px
+					@media #{$tablet}
+						margin-top: 90px
+						margin-bottom: 30px
+					@media #{$phone}
+						margin-top: 15px
+						margin-bottom: 0
+				&__box-number
+					left: 0
+					margin-left: -84px
+	&__box-number
+		width: 168px
+		height: 155px
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #ffffff
+		font-size: 24px
+		font-weight: bold
+		background-color: $violet-dark
+		position: absolute
+		top: 212px
+		left: 100%
+		margin-left: -84px
+		z-index: 1
+		@media #{$tablet}
+			width: 116px
+			height: 116px
+			top: auto
+			margin: 0 !important
+			left: 33px !important
+			bottom: -36px !important
+		@media #{$phone}
+			width: 70px
+			height: 70px
+			font-size: 14px
+			left: 20px !important
+			bottom: -12px !important
+	&__number
+		position: relative
+		display: inline-block
+		&::after
+			width: 100%
+			content: ""
+			display: inline-block
+			border-bottom: 5px solid $violet-light
+			position: absolute
+			bottom: -10px
+			left: 0
+			@media #{$phone}
+				border-bottom: 3px solid $violet-light
+				bottom: -5px
+	&__col
+		position: relative
+		width: 50%
+		display: flex
+		flex-wrap: wrap
+		@media #{$tablet}
+			width: 100%
+		&_1
+			font-size: 0
+		&_2
+			display: flex
+	&__box-text
+		max-width: 665px
+		width: 100%
+		margin-left: 125px
+		padding-right: 10px
+		@media #{$tablet}
+			margin-left: 30px
+		@media #{$phone}
+			margin-left: 20px
+	&__title
+		color: $gray-title
+		font-size: 80px
+		font-weight: bold
+		text-transform: uppercase
+		width: 100%
+		margin-bottom: 115px
+		margin-top: 260px
+		line-height: 60px
+		@media #{$pc-medium}
+			font-size: 60px
+			margin-top: 60px
+			margin-bottom: 20px
+		@media #{$tablet}
+			font-size: 80px
+			margin-top: 90px
+			margin-bottom: 30px
+		@media #{$phone-big}
+			font-size: 45px
+		@media #{$phone}
+			margin-top: 15px
+			margin-bottom: 0
+			font-size: 28px
+	&__text
+		font-size: 24px
+		line-height: 28px
+		letter-spacing: 1.3px
+		@media #{$pc-medium}
+			br
+				display: none
+		@media #{$tablet}
+			margin-bottom: 101px
+		@media #{$phone}
+			font-size: 16px
+			line-height: 20px
+			letter-spacing: 1.1px
+			margin-bottom: 80px
+	&__img
+		@media #{$phone}
+			display: none
+		&_mob
+			display: none
+			@media #{$phone}
+				display: inline-block

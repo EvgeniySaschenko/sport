@@ -1,0 +1,109 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+	+b.SECTION.section_advantages
+			+b.advantages
+				+e.item_1
+					.container
+						+e.box-title
+							+e.box-text
+								+e.H3.title ATHLETS
+						+e.box-img
+							+e.IMG(src="images/athlets.png" alt="athlets").img
+					+e.UL.list
+						+e.LI.list-item_1
+							.container
+								+e.box-text
+									+e.SPAN.list-item-number 01
+									+e.list-item-name Connection
+									+e.P.list-item-text Connect with coaches directly, you can ping coaches to view profile.
+
+						+e.LI.list-item_2
+							.container
+								+e.box-text
+									+e.SPAN.list-item-number 02
+									+e.list-item-name Collaboration
+									+e.P.list-item-text Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+
+						+e.LI.list-item_3
+							.container
+								+e.box-text
+									+e.SPAN.list-item-number 03
+									+e.list-item-name Growth
+									+e.P.list-item-text Resources and tools for you to get better as a student Athelte. Access  to training classes, tutor sessions, etc
+
+
+				+e.item_2
+					.container
+						+e.box-title
+							+e.box-text
+								+e.H3.title Players
+						+e.box-img
+							+e.IMG(src="images/player.png" alt="player").img
+					+e.UL.list
+						+e.LI.list-item_1
+							.container
+								+e.box-text
+									+e.SPAN.list-item-number 01
+									+e.list-item-name Connection
+									+e.P.list-item-text Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
+
+						+e.LI.list-item_2
+							.container
+								+e.box-text
+									+e.SPAN.list-item-number 02
+									+e.list-item-name Collaboration
+									+e.P.list-item-text Work with recruiter to increase your chances of finding talented athlete.
+
+						+e.LI.list-item_3
+							.container
+								+e.box-text
+									+e.SPAN.list-item-number 03
+									+e.list-item-name Growth
+									+e.P.list-item-text Save your time, recruit proper athlets for your team.
+
+
+
+	+b.SECTION.section_presentation
+		+b.presentation
+			+e.item
+				+e.col_1
+					+e.box-img
+						+e.IMG(src="images/presentation-1.jpg"  alt="presentation").img
+						+e.IMG(src="images/presentation-1-640.jpg"  alt="presentation").img_mob
+						+e.box-number 
+							+e.number  01
+				+e.col_2
+					+e.box-text
+						+e.H3.title Be active
+						+e.P.text Post videos with your skills, Like and follow others <br> to be more popular.
+
+			+e.item
+				+e.col_1
+					+e.box-img
+						+e.IMG(src="images/presentation-2.jpg"  alt="presentation").img
+						+e.IMG(src="images/presentation-2-640.jpg"  alt="presentation").img_mob
+						+e.box-number 
+							+e.number  02
+				+e.col_2
+					+e.box-text
+						+e.H3.title Find contact
+						+e.P.text Contact others to find right coach or athlete you are looking for. 
+
+			+e.item
+				+e.col_1
+					+e.box-img
+						+e.IMG(src="images/presentation-3.jpg"  alt="presentation").img
+						+e.IMG(src="images/presentation-3-640.jpg"  alt="presentation").img_mob
+						+e.box-number 
+							+e.number  03
+				+e.col_2
+					+e.box-text
+						+e.H3.title Work it
+						+e.P.text Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience. 

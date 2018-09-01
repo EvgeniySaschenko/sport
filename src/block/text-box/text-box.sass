@@ -1,0 +1,96 @@
+.text-box
+	&_header
+		color: #ffffff
+		font-size: 90px
+		font-weight: bold
+		width: 100%
+		@media #{$tablet}
+			font-size: 64px
+			max-width: 600px
+			margin: 0 auto
+		@media #{$phone-big}
+			max-width: 280px
+			font-size: 28px
+		.text-box
+			&__text
+				width: 100%
+				display: flex
+				@media #{$tablet}
+					line-height: 1.2
+				&_1
+					justify-content: flex-start
+					letter-spacing: 4px
+					@media #{$pc-medium}
+						justify-content: center
+					@media #{$tablet}
+						justify-content: flex-start
+					@media #{$phone-big}
+						letter-spacing: 1px
+				&_2
+					justify-content: flex-end
+					letter-spacing: 5px
+					@media #{$pc-medium}
+						justify-content: center
+						text-align: center
+					@media #{$tablet}
+						text-align: inherit
+						letter-spacing: 4px
+						margin-left: 110px
+					@media #{$phone-big}
+						margin-left: 46px
+						margin-top: 20px
+					@media #{$phone-big}
+						letter-spacing: 1px
+
+	&_footer
+		display: flex
+		align-items: center
+		@media #{$tablet}
+			flex-direction: column
+		.text-box
+			&__icon
+				margin-right: 30px
+				padding: 24px 12px
+				background-color: $violet-dark
+				border-radius: 32px
+				@media #{$tablet}
+					margin-right: 0
+					margin-bottom: 70px
+				@media #{$phone}
+					padding: 15px 9px
+					border-radius: 18px
+					margin-bottom: 40px
+			&__text
+				width: 100%
+				display: flex
+				text-transform: uppercase
+				margin-top: 10px
+				&_big
+					color: #ffffff
+					font-size: 80px
+					font-weight: bold
+					letter-spacing: 4px
+					line-height: 60px
+					margin-bottom: 15px
+					@media #{$tablet}
+						margin-bottom: 25px
+					@media #{$phone-big}
+						font-size: 32px
+					@media #{$phone}
+						letter-spacing: 1px
+						line-height: 1
+						margin-bottom: 0
+				&_small
+					color: $violet-light
+					font-size: 30px
+					letter-spacing: -2px
+					line-height: 35px
+					@media #{$tablet}
+						letter-spacing: 0
+						font-size: 36px
+						justify-content: center
+					@media #{$phone-big}
+						font-size: 14px
+					@media #{$phone}
+						line-height: 1
+						letter-spacing: 1px

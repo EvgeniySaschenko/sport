@@ -1,0 +1,30 @@
+.footer
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-size: cover
+	&__row
+		display: flex
+		justify-content: center
+		&_1
+			margin-top: 230px
+			@media #{$tablet}
+				margin-top: 125px
+			@media #{$phone}
+				margin-top: 100px
+		&_2
+			margin-top: 125px
+			@media #{$tablet}
+				margin-top: 260px
+			@media #{$phone}
+				margin-top: 75px
+				flex-direction: column
+				align-items: center
+		&_3
+			margin-top: 240px 
+			margin-bottom: 50px
+			@media #{$tablet}
+				margin-top: 30px
+			@media #{$phone}
+				margin-top: 65px

@@ -1,0 +1,185 @@
+.advantages
+	.container
+		position: relative
+	&__box-img
+		position: absolute
+		top: 30px
+		left: 210px
+		@media #{$pc-medium}
+			left: 0
+		@media #{$tablet}
+			left: -160px
+			top: 90px
+		@media #{$phone-big}
+			position: static
+		@media #{$phone}
+			height: 225px
+			text-align: center
+	&__img
+		@media #{$tablet}
+			max-height: 700px
+		@media #{$phone}
+			max-height: 280px
+	&__box-text
+		display: flex
+		flex-wrap: wrap
+		width: 50%
+		padding-left: 50px
+		@media #{$tablet}
+			width: 63%
+			padding-left: 0
+		@media #{$phone-big}
+			width: 100%
+		@media #{$phone}
+			margin-left: 10px
+	&__box-title
+		display: flex
+		justify-content: flex-end
+	&__title
+		font-size: 80px
+		font-weight: bold
+		color: $gray-title
+		margin-top: 106px
+		margin-bottom: 60px
+		line-height: 60px
+		text-transform: uppercase
+		letter-spacing: 1px
+		@media #{$tablet}
+			margin-top: 80px
+			margin-bottom: 30px
+		@media #{$phone-big}
+			font-size: 50px
+		@media #{$phone}
+			margin-top: 15px
+			margin-bottom: 5px
+	&__list
+		.container
+			display: flex
+			justify-content: flex-end
+		&-item
+			padding: 53px 0
+			@media #{$tablet}
+				padding: 31px 0
+			@media #{$phone}
+				padding: 52px 0
+			&_1
+				@media #{$phone}
+					background-color: #fafafa
+					padding-top: 80px
+			&_2
+				background-color: $gray-bg
+			&_3
+				background-color: $violet-dark
+				.advantages__list-item-number
+					&::after
+						border-bottom: 5px solid #efefef
+				.advantages__list-item-text
+					color: #ffffff
+			&-number
+				font-size: 18px
+				font-weight: bold
+				display: inline-block
+				position: relative
+				margin-right: 10px
+				top: 3px
+				@media #{$tablet}
+					margin-right: 5px
+					margin-left: 5px
+				@media #{$phone}
+					font-size: 14px
+				&::after
+					content: ""
+					width: 100%
+					display: inline-block
+					border-bottom: 5px solid $violet-dark
+					position: absolute
+					bottom: 5px
+					left: 0
+					border-radius: 20px
+					@media #{$phone}
+						bottom: 14px
+			&-name
+				font-size: 36px
+				font-weight: bold
+				color: $gray-name
+				text-transform: uppercase
+				letter-spacing: 2px
+				line-height: 34.5px
+				@media #{$tablet}
+					font-size: 32px
+				@media #{$phone}
+					font-size: 23px
+			&-text
+				margin-top: 28px
+				line-height: 28px
+				letter-spacing: 1px
+				width: 100%
+				@media #{$tablet}
+					font-size: 16px
+					margin-top: 25px
+				@media #{$phone}
+					font-size: 15px
+					line-height: 18px
+					margin-top: 15px
+	&__item
+		&:nth-child(even)
+			.advantages
+				&__box-title
+					justify-content: flex-start
+				&__list
+					margin-left: 0
+					.container
+						display: flex
+						justify-content: flex-start
+					&-item
+						padding: 53px 0
+						@media #{$tablet}
+							padding: 31px 0
+						@media #{$phone}
+							padding: 50px 0 55px
+						&_1
+							@media #{$phone}
+								background-color: #fafafa
+								padding-top: 75px
+						&_2
+							padding-bottom: 78px
+							@media #{$tablet}
+								padding-bottom: 31px
+							@media #{$phone}
+								padding-bottom: 55px
+						&_3
+							background-color: $blue-dark
+							font-weight: 300
+							@media #{$tablet}
+								padding-top: 34px
+								.advantages__list-item-text
+									font-weight: 400
+							@media #{$phone}
+								padding-top: 49px
+							.advantages__list-item-number
+								&::after
+									border-bottom: 5px solid #ffffff
+						&-number
+							color: #705aba
+						&-text
+							letter-spacing: 0.9px
+				&__img
+					@media #{$tablet}
+						max-height: 570px
+				&__box-img
+					top: 28px
+					right: -60px
+					text-align: right
+					@media #{$pc-medium}
+						right: -320px
+					@media #{$tablet}
+						right: -250px
+				&__box-text
+					padding-left: 0
+					@media #{$tablet}
+						width: 55%
+						margin-left: 15px
+					@media #{$phone-big}
+						width: 100%
+					@media #{$phone}
+						margin-left: 0

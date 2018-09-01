@@ -1,0 +1,30 @@
+mixin b-footer()
+	+b.FOOTER(style="background-image: url(images/bg-footer.jpg)").footer
+		.container
+			+e.row_1
+				+b.text-box(class="_download _footer")
+					+e.col_img
+						+e.icon
+							+b-icon_svg('logo-small')
+					+e.col_text
+						+e.text_big Download app
+						+e.text_small Show everyone what you can do!
+
+			+e.row_2
+				+b.A.btn(href="#" class="_apple-store _app")
+					+e.I.icon
+						+b-icon_svg('apple-store')
+					+e.SPAN.box-text
+						+e.SPAN.text_1 download on the
+						+e.SPAN.text_2 app store
+
+				+b.A.btn(href="#" class="_google-play _app")
+					+e.I.icon
+						+b-icon_svg('google-play')
+					+e.SPAN.box-text
+						+e.SPAN.text_1 get it on
+						+e.SPAN.text_2 google play
+
+			+e.row_3
+				+b.A(href="#").logo_footer
+					+e.IMG(src="images/logo.svg" alt="logo").img

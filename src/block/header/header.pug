@@ -1,0 +1,26 @@
+mixin b-header()
+	+b.HEADER(style="background-image: url(images/bg-header.jpg)").header
+		.container
+			+e.row_1
+				+b.A(href="#").logo_header
+					+e.IMG(src="images/logo.svg" alt="logo").img
+
+			+e.row_2
+				+b.H1.text-box_header
+					+e.SPAN.text_1 BE RECRUITED
+					+e.SPAN.text_2 PLAY COLLEGE SPORTS
+
+			+e.row_3
+				+b.btn.A(href="#" class="_apple-store _app")
+					+e.I.icon
+						+b-icon_svg('apple-store')
+					+e.SPAN.box-text
+						+e.SPAN.text_1 download on the
+						+e.SPAN.text_2 app store
+
+				+b.btn.A(href="#" class="_google-play _app")
+					+e.I.icon
+						+b-icon_svg('google-play')
+					+e.SPAN.box-text
+						+e.SPAN.text_1 get it on
+						+e.SPAN.text_2 google play
